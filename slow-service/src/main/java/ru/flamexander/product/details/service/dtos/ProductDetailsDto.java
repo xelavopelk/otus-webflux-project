@@ -1,4 +1,4 @@
-package ru.flamexander.reactive.service.dtos;
+package ru.flamexander.product.details.service.dtos;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class ProductDto {
+public class ProductDetailsDto {
     private Long id;
-    private String name;
+    private String description;
 }

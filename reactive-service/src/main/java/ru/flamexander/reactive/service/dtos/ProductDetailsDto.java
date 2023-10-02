@@ -5,9 +5,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-public class ProductDto {
+@NoArgsConstructor
+public class ProductDetailsDto {
     private Long id;
-    private String name;
+    private String description;
 }

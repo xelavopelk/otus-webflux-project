@@ -1,11 +1,11 @@
-package ru.flamexander.slow.service;
+package ru.flamexander.product.details.service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SlowServiceApplication {
+public class ProuctDetailsServiceApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(SlowServiceApplication.class, args);
+		SpringApplication.run(ProuctDetailsServiceApplication.class, args);
 	}
 }

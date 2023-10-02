@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 @Configuration
 public class IntegrationsConfig {
     @Bean
-    public WebClient slowServiceWebClient() {
+    public WebClient productDetailsServiceWebClient() {
         WebClient.Builder builder = WebClient.builder();
         HttpClient httpClient = HttpClient.create();
         httpClient
