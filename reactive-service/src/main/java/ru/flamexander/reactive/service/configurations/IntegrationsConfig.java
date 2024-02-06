@@ -25,7 +25,7 @@ public class IntegrationsConfig {
                 );
         builder.clientConnector(new ReactorClientHttpConnector(httpClient));
         return builder
-                .baseUrl("http://localhost:8190")
+                .baseUrl("http://slow:8190")
                 .build();
     }
 }
