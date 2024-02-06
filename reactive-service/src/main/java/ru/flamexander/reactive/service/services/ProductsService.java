@@ -7,6 +7,8 @@ import ru.flamexander.reactive.service.dtos.ProductDto;
 import ru.flamexander.reactive.service.entities.Product;
 import ru.flamexander.reactive.service.repositories.ProductRepository;
 
+import java.util.List;
+
 @Service
 public class ProductsService {
     private final ProductRepository productRepository;
@@ -17,6 +19,10 @@ public class ProductsService {
 
     public Flux<Product> findAll() {
         return productRepository.findAll();
+    }
+
+    public Flux<Product> findByIds(List<Long> ids) {
+        return productRepository.findAllById(ids);
     }
 
     public Mono<Product> findById(Long id) {
